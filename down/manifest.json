@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "name":             "Paginator Down",
+  "description":      "Navigates to previous page by decrementing a number in the URL",
+  "version":          "1.0",
+  "browser_action":   { "default_icon": "down.png" },
+  "permissions":      [ "activeTab", "tabs" ],
+  "background":       { "scripts": ["down.js"] }
+}
