@@ -10,7 +10,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     return strReverse(""+num)+remainder;
   })
   url = strReverse(url)
-  if url != tab.url {
+  if (url != tab.url) {
     chrome.tabs.update(tab.id, {url:url});
   }
 });
